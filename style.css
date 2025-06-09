@@ -194,6 +194,41 @@ video {
   padding: 0.6rem 1.2rem;
 }
 
+#reviews {
+  background-color: #f5e6eb;
+  padding: 2.5rem;
+  margin: 3rem auto;
+  border-radius: 8px;
+}
+
+#reviews h2 {
+  text-align: center;
+  color: var(--secondary);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+/* Review Section */
+.review {
+  text-align: left;
+  padding: 2.5rem;
+  background: linear-gradient(to right, rgba(234, 164, 197, 0.1), rgba(88, 60, 135, 0.1));
+  border-radius: 8px;
+  box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+  margin: 3rem auto;
+  max-width: 1500px;
+}
+
+.review h3 {
+  margin: 0;
+}
+
+.review p {
+  color: var(--dark);
+  font-size: 1.1rem;
+  text-align: left;
+}
+
 /* Thank You Section */
 .thank-you {
   text-align: center;
