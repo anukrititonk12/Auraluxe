@@ -31,3 +31,28 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
   });
 });
+
+// JavaScript for Reviews
+document.getElementById('review-form').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  // Get form values
+  const name = document.getElementById('reviewer-name').value;
+  const rating = document.getElementById('review-rating').value;
+  const text = document.getElementById('review-text').value;
+
+ 
+  const review = document.createElement('div');
+  review.classList.add('review');
+  review.innerHTML = `
+    <h4>${name}</h4>
+    <p>${'⭐'.repeat(rating)}</p>
+    <p>"${text}"</p>
+  `;
+
+  // Add review to container
+  document.getElementById('reviews-container').appendChild(review);
+
+  // Clear form
+  document.getElementById('review-form').reset();
+});
