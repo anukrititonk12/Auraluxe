@@ -263,3 +263,41 @@ video {
     flex: 0 0 100%;
   }
 }
+/* Review Form Section */
+.review-section {
+  margin: 20px 0;
+}
+
+.review-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.review-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.review-section label {
+  margin: 5px 0;
+}
+
+.review-section input, .review-section textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.review-section button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.review-section button:hover {
+  background-color: #45a049;
+}
