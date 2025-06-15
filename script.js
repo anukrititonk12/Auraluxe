@@ -32,8 +32,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
+// For shop buttons
 document.addEventListener('DOMContentLoaded', function() {
-  // For shop buttons
   const shopButtons = document.querySelectorAll('.shop-button');
   shopButtons.forEach(button => {
     button.addEventListener('click', function() {
