@@ -340,13 +340,11 @@ video {
 }
 
 .form-group {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.4rem; 
 }
 
 .form-group label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem; 
 }
 
 /* Star Rating - Improved Positioning */
@@ -354,7 +352,8 @@ video {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
+  margin-bottom: 0rem; 
 }
 
 .star-rating input {
