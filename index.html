@@ -69,7 +69,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-details">
           <h3>Silk Matte Lipstick</h3>
           <p>Our signature lipstick delivers intense color with a weightless feel. The silky-smooth formula glides on effortlessly, providing full coverage and a luxurious matte finish that lasts for hours without drying your lips.</p>
-          <button class="shop-button">Shop Now</button>
+          <button class="shop-button">Buy Now</button>
         </div>
       </div>
       
@@ -80,7 +80,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-details">
           <h3>Flawless Foundation</h3>
           <p>Experience lightweight coverage that feels like your skin, only better. Our breathable formula blends seamlessly for a natural, radiant finish while nourishing ingredients protect and hydrate throughout the day.</p>
-          <button class="shop-button">Shop Now</button>
+          <button class="shop-button">Buy Now</button>
         </div>
       </div>
       
@@ -91,7 +91,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-details">
           <h3>Nail Paint</h3>
           <p>Express yourself with our chip-resistant, high-shine nail colors. The precision brush ensures smooth, even application, while our 10-free formula keeps your nails healthy and strong with vibrant color that lasts.</p>
-          <button class="shop-button">Shop Now</button>
+          <button class="shop-button">Buy Now</button>
         </div>
       </div>
       
@@ -102,37 +102,58 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="product-details">
           <h3>Luxury Blush</h3>
           <p>Add a natural flush of color with our silky-soft blush. The buildable formula blends effortlessly for a customizable glow, while light-reflecting particles create dimension and radiance that lasts all day.</p>
-          <button class="shop-button">Shop Now</button>
+          <button class="shop-button">Buy Now</button>
         </div>
       </div>
     </div>
   </section>
 
   <section id="reviews">
-        <h2>Customer Reviews</h2>
-        <div class="review">
-            <h3>Jane Doe</h3>
-            <p>⭐⭐⭐⭐⭐</p>
-            <p>"Amazing product! My skin feels so much better."</p>
-        </div>
-        <div class="review">
-            <h3>John Smith</h3>
-            <p>⭐⭐⭐⭐</p>
-            <p>"Great quality, but a bit pricey."</p>
-        </div>
-            <section class="review-section">
-          <h2>Add Your Review</h2>
-          <form id="reviewForm">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required>
-              
-              <label for="review">Review:</label>
-              <textarea id="review" name="review" required></textarea>
-              
-              <button type="submit">Submit</button>
-          </form>
-      </section>   
-     </section>
+    <h2>Customer Reviews</h2>
+    <div class="review">
+        <h3>Jane Doe</h3>
+        <p>⭐⭐⭐⭐⭐</p>
+        <p>"Amazing product! My skin feels so much better."</p>
+    </div>
+    <div class="review">
+        <h3>John Smith</h3>
+        <p>⭐⭐⭐⭐</p>
+        <p>"Great quality, but a bit pricey."</p>
+    </div>
+    
+    <div class="review" id="add-review-section">
+        <h2>Add Your Review</h2>
+        <form id="reviewForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="rating">Rating:</label>
+                <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5">★</label>
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4">★</label>
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3">★</label>
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2">★</label>
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1">★</label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" required></textarea>
+            </div>
+            
+            <button type="submit" id="submitReview">Submit</button>
+        </form>
+    </div>
+</section>
 
   <section class="thank-you">
     <h3>Thank You for Visiting Our Website</h3>
