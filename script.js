@@ -110,3 +110,23 @@ document.getElementById('reviewForm').addEventListener('submit', function(event)
   // Clear form
   document.getElementById('reviewForm').reset();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  // For shop buttons
+  const shopButtons = document.querySelectorAll('.shop-button');
+  shopButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      alert("Thank you for shopping!");
+    });
+  });
+
+  // Review form submission
+  const reviewForm = document.getElementById('reviewForm');
+  if (reviewForm) {
+    reviewForm.addEventListener('submit', function(event) {
+      event.preventDefault();
+      alert("Thank you for your feedback!");
+      this.reset();
+    });
+  }
+});
